@@ -36,7 +36,7 @@ export async function analyzeImageWithGemini(
   }
 
   const genAI = new GoogleGenerativeAI(apiKey);
-  const model = genAI.getGenerativeModel({ model: "gemini-3-flash" });
+  const model = genAI.getGenerativeModel({ model: "gemeni-2.5-flash-preview-09-2025" });
 
   try {
     const result = await model.generateContent([
